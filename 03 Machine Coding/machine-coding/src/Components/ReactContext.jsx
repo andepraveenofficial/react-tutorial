@@ -1,33 +1,36 @@
-import { createContext, useContext } from 'react'
+import { createContext, useContext } from "react";
 
-
-const MyContext = createContext({ name: "Default" })
-
+const MyContext = createContext({ name: "Default" });
 
 const Parent = () => {
-    return <div><Child /></div>
-}
+  return (
+    <div>
+      <Child />
+    </div>
+  );
+};
 
 const Child = () => {
-    const context = useContext(MyContext)
-    const { name } = context
+  const context = useContext(MyContext);
+  const { name } = context;
 
-    return <div>
-        <p>Child</p>
-        <p>{name}</p>
+  return (
+    <div>
+      <p>Child</p>
+      <p>{name}</p>
     </div>
-}
-
+  );
+};
 
 const ReactContext = () => {
-    return (
-        <MyContext.Provider value={{ name: "React" }} >
-            <div>
-                <Parent />
-            </div>
-        </MyContext.Provider>
+  const contextObject = { name: "React" };
+  return (
+    <MyContext.Provider value={contextObject}>
+      <div>
+        <Parent />
+      </div>
+    </MyContext.Provider>
+  );
+};
 
-    )
-}
-
-export default ReactContext
+export default ReactContext;

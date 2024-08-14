@@ -1,3 +1,13 @@
+# Interview Questions
+
+### Basic
+
+1. What is ReactJS?
+
+### Medium
+
+### Hard
+
 # Machine Coding
 
 1. CounterApp
@@ -6,11 +16,3 @@
 4. State Lift
 5. React Context
 6. HOC
-
-### Installation
-
-- `npm install`
-
-### Start the Application
-
-- `npm run dev`
