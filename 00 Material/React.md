@@ -66,7 +66,7 @@
 - React code written by Facebook developers, and maintained by Facebook.
 - React is used to building **User Interfaces**.
 - we can create **Single Page Applications (SPA)** by using ReactJS.
-- React allows us to create **reusable components** and **Composable Components**.
+- React allows us to create **Reusable components** and **Composable Components**.
 - React at the end of the day is just Javascript.
 
 ### Advantages of ReactJS
@@ -168,19 +168,21 @@ rootElement.appendChild(element);
 
 ```html
 <!--CDN Links-->
+
+<!--React-->
 <script
   crossorigin
   src="https://unpkg.com/react@18/umd/react.development.js"
 ></script>
-<!--React-->
+
+<!--ReactDOM-->
 <script
   crossorigin
   src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
 ></script>
-<!--ReactDOM-->
 ```
 
-- Now we can Write ReactJS code in external js file.
+- Now we can Write ReactJS code in external `JS` file.
 
 ### Why two CDN files?
 
@@ -209,7 +211,7 @@ const Heading = React.createElement(
 ### ReactDOM
 
 - **ReactDOM** connects React to the RealDOM.
-- **ReactDOM** React to interact with the Real DOM.
+- **ReactDOM** is used to React interact with the Real DOM.
 - `ReactDOM.render()` displays a React element.
 - Syntax : `ReactDOM.render(reactElement, container); `
 
@@ -279,7 +281,7 @@ root.render(parent);
 - Web browsers can only read regular JS.
 - Browser cannot understand JSX.
 - JSX needs to be converted to the regular JS by using **Babel**.
-- We can insert the dynamic variable in JSX, but not in HTML.
+- We can insert the **Dynamic variable** in JSX, but not in HTML.
 
 ```js
 // JSX Syntax
@@ -458,6 +460,7 @@ For example in `package.json` file:
 
 ### npx
 
+- npm is a **node package executor**.
 - `npx` is a tool that comes with `npm`, when you installed npm above 5.2.0 version then automatically `npx` will be installed. It is a npm package runner that can execute any package that you want from the npm.
 - `npx` command is used to execute the package.
 - Example : `npx parcel index.html`
@@ -662,7 +665,7 @@ Take all JS files and convert into single JS file
 ### What is the `dist` folder?
 
 - we run command `npx parcel index.html` this will create a faster development version of our project & serves it on the server.
-- The /dist folder contains the minified version of your source code that is used in production for web applications. It includes all the necessary files and modules that have been optimized and made as small as possible. This folder holds the final code that is ready to be deployed and used by users.  
+- The `/dist` folder contains the minified version of your source code that is used in production for web applications. It includes all the necessary files and modules that have been optimized and made as small as possible. This folder holds the final code that is ready to be deployed and used by users.  
   `npx parcel build index.html` it creates a lot of things, minify your file. and "parcel will build all the production files to the dist folder".
 
 </details>
@@ -904,7 +907,7 @@ export default PureClassComponent;
 ### React.memo
 
 - `React.memo` is similar to `React.PureComponent` and it is for functional component instead of class component.
-- It memoize the Component. The Component is re-recreated when props or state of the Components Updated.
+- It memoize the Component. The Component is re-created when props or state of the Components Updated.
 - you can avoid re-rendering when the same props and state of the Component.
 - The `memo` function is used for memoizing functional component to prevent unnecessary renders.
 
@@ -1081,7 +1084,7 @@ export default FunctionalComponent;
 ### setState
 
 - `setState()` method is a class component method.
-- The setState is a method to modify the current state.
+- The **setState** is a method to modify the current state.
 - When the state object changes, the component re-renders.
 
 ```js
@@ -1569,7 +1572,7 @@ export default App;
 ```js
 useEffect(() => {}, []);
 // `() => {}` is callback function
-//  `[]` is called a empty dependency array.
+// `[]` is called a empty dependency array.
 ```
 
 ```js
@@ -1642,7 +1645,7 @@ export default Child;
 #### useRef()
 
 - The `useRef` Hook is used to update some value in your component, but no need to re-render.
-- `useRef` is remembered the value.
+- `useRef` remembers the value.
 - we can access the DOM elements. we can interact with HTML DOM without re-render.
 
 **Types of Variables** :
@@ -2653,7 +2656,7 @@ export default App;
 ### ReactDOM
 
 - **ReactDOM** connects React to the RealDOM.
-- **ReactDOM** React to interact with the RealDOM.
+- **ReactDOM** is used to React interact with the RealDOM.
 
 ![ReactDOM](./assets/React%20Setup%20with%20CDN/ReactDOM.jpg)
 
